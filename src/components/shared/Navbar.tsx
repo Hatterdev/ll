@@ -49,7 +49,7 @@ export function Navbar() {
             bgClip="text"
             fontWeight="extrabold"
           >
-            GIC FAN AREA
+            GIC FAN ZONE
           </Heading>
         </Box>
         <Box display={{ lg: "block", base: "none" }}>
