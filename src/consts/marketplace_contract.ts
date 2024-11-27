@@ -12,7 +12,7 @@ type MarketplaceContract = {
  */
 export const MARKETPLACE_CONTRACTS: MarketplaceContract[] = [
   {
-    address: "0x43d2F5aEb81BEc7aB05350b087EBeB573AbC20d1",
+    address: "0x73779628D40D91e67e3B221eA42cEaa790143e37",
     chain: bsc,
   },
   {
