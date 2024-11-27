@@ -34,7 +34,11 @@ export function Navbar() {
   const wallet = useActiveWallet();
   const { colorMode } = useColorMode();
   return (
-    <Box py="30px" px={{ base: "20px", lg: "50px" }}>
+    <Box
+      py="20px" // Diminuímos o padding vertical para tornar a navbar mais estreita
+      px={{ base: "20px", lg: "50px" }}
+      borderBottom="2px solid #00FF00" // Fio de LED verde
+    >
       <Flex direction="row" justifyContent="space-between">
         <Box my="auto">
           <Heading
@@ -45,8 +49,7 @@ export function Navbar() {
             bgClip="text"
             fontWeight="extrabold"
           >
-            {/* Replace this with your own branding */}
-            THIRDMART
+            GIC FAN AREA
           </Heading>
         </Box>
         <Box display={{ lg: "block", base: "none" }}>
