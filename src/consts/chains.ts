@@ -1,11 +1,41 @@
 import { defineChain } from "thirdweb";
 
 /**
- * All chains should be exported from this file
+ * Definir a rede Binance Smart Chain (BSC)
  */
-export { avalancheFuji, sepolia, polygonAmoy } from "thirdweb/chains";
+export const bsc = defineChain({
+  id: 56, // ID da BSC
+  rpc: "https://bsc-dataseed.binance.org/", // RPC oficial da BSC
+  nativeCurrency: {
+    name: "BNB", // Nome da moeda nativa da BSC
+    symbol: "BNB", // Símbolo da moeda
+    decimals: 18, // Decimais da moeda
+  },
+  blockExplorers: [
+    {
+      name: "BscScan", // Nome do explorador
+      url: "https://bscscan.com", // URL do explorador de blocos da BSC
+    },
+  ],
+  name: "Binance Smart Chain", // Nome da rede
+});
 
 /**
- * Define any custom chain using `defineChain`
+ * Definir a rede Polygon
  */
-export const example_customChain1 = defineChain(0.001); // don't actually use this
+export const polygon = defineChain({
+  id: 137, // ID da Polygon
+  rpc: "https://polygon-rpc.com/", // RPC oficial da Polygon
+  nativeCurrency: {
+    name: "MATIC", // Nome da moeda nativa da Polygon
+    symbol: "MATIC", // Símbolo da moeda
+    decimals: 18, // Decimais da moeda
+  },
+  blockExplorers: [
+    {
+      name: "PolygonScan", // Nome do explorador
+      url: "https://polygonscan.com", // URL do explorador de blocos da Polygon
+    },
+  ],
+  name: "Polygon", // Nome da rede
+});
